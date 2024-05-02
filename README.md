@@ -1,3 +1,8 @@
+CMS - Drupal Version 10.2.4
+Database - 10.4.30-MariaDB
+PHP - Version 8.1.21
+
+
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
 Drupal is an open source content management platform supporting a variety of
