@@ -1,0 +1,10 @@
+name: 'Product of the day'
+type: module
+core_version_requirement: ^10
+description: 'Show product of the day in a block'
+package: 'Product of the day List'
+
+dependencies:
+  - drupal:block
+
+configure: product_of_the_day.admin.settings

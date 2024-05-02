@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme override for a product of the day block item.
+ *
+ * Available variables:
+ * - title: The title of the node.
+ * - url: The URL of the node.
+ * - image_url: The URL of the node's image (if available).
+ * - summary: The summary of the node.
+ */
+#}
+<div class="col">
+  <div class="product-of-the-day-block-item">
+    <h3>{{ title }}</h3>
+    {% if image_url %}
+    <div class="item-image">
+      <img src="{{ image_url }}" alt="{{ title }}" width="200px" height="auto" />
+    </div>
+    {% endif %}
+    {% if summary %}
+      <p>{{ summary }}</p>
+    {% endif %}
+    <a href="/admin/content/products_of_the_day">View more</a>
+    
+  </div>
+</div>

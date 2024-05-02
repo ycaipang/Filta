@@ -1,0 +1,20 @@
+product_of_the_day.admin:
+  path: '/admin/content/products_of_the_day'
+  defaults:
+    _title: 'Product Administration'
+    _controller: '\Drupal\product_of_the_day\Controller\ProductAdminController::content'
+  requirements:
+    _permission: 'administer site configuration'
+
+product_of_the_day.product_form:
+  # This path takes dynamic arguments, which are enclosed in { }.
+  path: '/products_of_the_day/product-form'
+  defaults:
+    # This route returns a Response object so also uses _controller
+    _form: 'Drupal\product_of_the_day\Form\ProductForm'
+    _title: 'Add new Product of the Day'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    # Enable the admin theme for this route.
+    _admin_route: TRUE
